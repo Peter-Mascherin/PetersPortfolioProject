@@ -1,8 +1,11 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [startdata, setStartdata] = useState(0);
+
   const checkalert = () => {
-    alert("this all works");
+    alert(`current state number is ${startdata}`);
   };
 
   return (
@@ -11,6 +14,12 @@ function App() {
       <button className="btn btn-primary" onClick={() => checkalert()}>
         Alert time
       </button>
+      <input
+        className="formControl"
+        type="number"
+        value={startdata}
+        onChange={(e) => setStartdata(e.target.value)}
+      ></input>
     </div>
   );
 }
