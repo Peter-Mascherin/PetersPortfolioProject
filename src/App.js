@@ -1,25 +1,13 @@
 import "./App.css";
 import { useState } from "react";
+import MyNavbar from "./MyNavbar";
 
 function App() {
-  const [startdata, setStartdata] = useState(0);
-
-  const checkalert = () => {
-    alert(`current state number is ${startdata}`);
-  };
-
   return (
-    <div className="container">
-      <p>hello portfolio</p>
-      <button className="btn btn-primary" onClick={() => checkalert()}>
-        Alert time
-      </button>
-      <input
-        className="formControl"
-        type="number"
-        value={startdata}
-        onChange={(e) => setStartdata(e.target.value)}
-      ></input>
+    <div className="wrapper-div">
+      <div className="container-fluid" id="rootcontainer">
+        <MyNavbar />
+      </div>
     </div>
   );
 }
