@@ -9,6 +9,7 @@ function App() {
         <MyNavbar />
       </div>
     </div>
+    //i know the fix to this, its the two divs surrounding it, fix needed
   );
 }
 
