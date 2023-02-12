@@ -15,5 +15,10 @@ code {
 
 :root{
   background-color: rgb(20, 20, 20);
+
+  --orange-primary-tone: rgb(240,140,0);
+  --orange-secondary-tone: rgb(185, 108, 0);
+  --blue-primary-tone: rgb(48,192,209);
+  --blue-secondary-tone: rgb(41, 153, 165);
 }
 

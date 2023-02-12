@@ -1,7 +1,7 @@
 function ContactComp() {
   return (
-    <div>
-      <p className="paragraphthing">contact me</p>
+    <div className="text-white text-center m-3">
+      <p>Contact me</p>
     </div>
   );
 }

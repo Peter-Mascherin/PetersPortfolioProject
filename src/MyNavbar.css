@@ -2,10 +2,20 @@
 {
     background-color: rgb(31, 31, 31);
     border-radius: 0px 0px 12px 12px;
+    padding: 0;
+    height: 8vh;
     
-    border-top-width: 0px;
-    border-left-width: 0px;
-    border-bottom-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
+    
+}
+
+
+.wrapper-div
+{
+    width:100%;
+    padding-bottom: 2px;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(48,192,209,1) 49%, rgba(240,140,0,1) 100%);
+    border-radius: 0px 0px 12px 12px;
 }
 
 
@@ -31,6 +41,8 @@
     animation: fadeIn 0.25s;
 }
 
+
+
 @keyframes fadeIn{
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -45,7 +57,7 @@
 
 #navtextstyle:hover
 {
-    color:rgba(240,140,0,1) !important;
+    color:var(--orange-primary-tone) !important;
     background-color: rgba(202, 111, 69, 0.192);
     border-radius: 12px;
     
@@ -61,7 +73,7 @@
 
 .nav-link:hover
 {
-    color:rgba(240,140,0,1) !important;
+    color:var(--orange-primary-tone) !important;
     background-color: rgba(202, 111, 69, 0.192);
     border-radius: 12px;
 }
